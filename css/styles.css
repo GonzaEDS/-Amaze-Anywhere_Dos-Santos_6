@@ -79,6 +79,15 @@ nav {
     background-position: 76% 100%;  
 }
 
+/* ABOUT */
+
+.about-bg-img {
+    background-image: url(../img/cards-background.webp);
+    background-size: 205%;
+    background-color: #fffffff0;
+    background-blend-mode: lighten;
+}
+
 /* course goals section */
 
 .goals-card {
@@ -139,8 +148,6 @@ nav {
 
     .pages-background {
         height: 55vh!important;
-        background-size: cover;
-        background-position: right top;
     }
     .header-titles {
         font-size: 4rem!important;

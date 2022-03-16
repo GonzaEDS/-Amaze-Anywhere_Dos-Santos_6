@@ -3,13 +3,8 @@
 /* vars */
 :root {
     scroll-behavior: smooth;
-
-    --darkTransparentBg: #060606eb;
-    --whiteText: rgb(238, 235, 235);
-    --whiteBlueBg: #d4d4de;
+    
     --primary: #287c81fa;
-    --lighterPrimary: #98c4c7;
-    --navHeight: 8vh;
     --blackFont:#262729;
     --titlesFont: 'Old Standard TT',serif;
     --sansSerifFont: 'Lato', sans-serif;
@@ -798,7 +793,6 @@ footer {
 
 .goals-img-1 {
     background-image: url(../img/Alan-400x220.webp);
-
 }
 
 .goals-img-2 {

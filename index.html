@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amaze Anywhere - Fascinating Card Magic</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/bootstrap.min.js"></script>
     <script data-search-pseudo-elements defer src="https://pro.fontawesome.com/releases/v5.10.1/js/all.js"></script>
@@ -47,61 +47,64 @@
     </nav>
    
     <main class="grid">
-        <section class="vh-100 d-flex flex-column align-items-center bg-image hero-background">
-            <div class=" h-100 w-100 hero-banner d-flex flex-column align-items-center justify-content-around">
-                <div class="w-25 align-self-center ">
-                    <h1 class="text-white display-1 text-uppercase amaze-title">Amaze anywhere.</h1> 
+        <section class="hero-background vh-100 d-flex flex-column align-items-center bg-image ">
+            <div class="hero-banner h-100 w-100 d-flex flex-column align-items-center justify-content-around pt-lg-5">
+                <div class="title-container align-self-center">
+                    <h1 class="text-white display-1 text-uppercase amaze-title fst-italic mt-sm-5">Amaze anywhere.</h1> 
                 </div>
-                <button id="start-link" class="d-md-none btn btn-outline-light d-flex rounded-pill px-3 justify-self-end"><i class="bi bi-chevron-down"></i><div class="start-btn">Start</div></button>  
-                <button id="start-link-to-video" class="d-none d-md-inline"><i class="bi bi-chevron-down"></i><div class="start-btn">Start</div></button>  
+                <button id="start-link" class="d-md-none btn btn-outline-light d-flex rounded-pill px-3 justify-self-end"><i class="bi bi-chevron-down"></i><div class="start-btn text-uppercase">Start</div></button>  
+                <button id="start-link-to-video" class="d-none d-md-inline-flex gap-2 btn btn-outline-light d-flex rounded-pill p-3 justify-self-end fs-4"><i class="bi bi-chevron-down"></i><div class="start-btn text-uppercase">Start</div></button>  
             </div>
         </section>
         <!-- Welcome -->
-        <section class="container-fluid d-flex flex-column pt-5 justify-content-center gap-2 align-items-center" id="start">
-
-            <h1 class="text-uppercase">Welcome</h1>
+        <section class="container-fluid bg-secondary bg-opacity-25 bg-gradient d-flex flex-column py-5 justify-content-center gap-2 align-items-center px-lg-5" id="start">
+            <h1 class="text-uppercase fst-italic display-5">Welcome</h1>
             <div class="divider_1 border-bottom border-2 border-primary mb-4 w-25"></div>
-            <div class="ratio ratio-16x9 video" id="video">
+            <div class="ratio ratio-16x9  video" id="video">
                 <iframe class="iframe" allowfullscreen="" title="Reproductor de vídeo vimeo" src="https://player.vimeo.com/video/598020474?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0#t="></iframe>     
             </div>
             <div class="container-fluid mt-3">
-                <p class="lead">With more than 15 years of career, thanks to magic we have traveled the world, performed in TV shows and won multiple international awards.</p>
-                
+                <p class="lead">With more than 15 years of career, thanks to magic we have traveled the world, performed in TV shows and won multiple international awards.</p>  
             </div>
-            <div class="d-flex w-100 justify-content-center align-items-center gap-2 eye-divider ">
+            <div class="eye-divider px-3 d-flex w-100 justify-content-center align-items-center gap-2">
                     <div class="rule w-50 border-bottom border-2 h-50 border-primary"></div><i aria-hidden="true" class="far fa-eye text-primary h-100" id="eye-icon"></i><div class="w-50 border-bottom border-2 h-50 border-primary rule"></div>              
             </div>
             <button class="next d-none"><i aria-hidden="true" class="fas fa-angle-down"></i><a href="#best-routines">Next</a></button>
-
         </section>
         <!-- Best routines and single payment card -->
-        <section class="best-routines-section d-flex flex-column pt-4 justify-content-center align-items-center" id="best-routines">
-            <h1 class="text-uppercase text-center">You will learn our best routines</h1>
-            <div class="divider_1"></div>
-            <img class="img-fluid  img-shadow-fx" src="img/best-routines.jpg" alt="amazed people">
+        <section class="best-routines-section bg-light d-flex flex-column py-5 justify-content-center align-items-center gap-2" id="best-routines">
+            <h1 class="text-uppercase text-center fst-italic">You will learn our best routines</h1>
+            <div class="divider_1 border-bottom border-2 border-primary mb-4 w-25"></div>
+            <div class="container">
+                <img class="img-fluid shadow rounded" src="img/best-routines.jpg" alt="amazed people">
+            </div>
         </section>
         
-        <section class="single-payment-section flex-section">   
-            <div class="sp-card-bg flex-item-c">
-                <div class="offer-band-box"><div class="offer-band">Offer</div></div>
-                <div class="sp-card flex-item-c">
-                    <div class="sp-card-head flex-item-c">
-                        <h1>Single payment</h1>
-                    </div>
-                    <div class="sp-card-body flex-item-c">
-                        <div class="price flex-item-r"><strike class="flex-item-r"><small>$58</small></strike> $29<small>USD</small></div> 
-                        <p><i aria-hidden="true" class="far fa-check-circle"></i> <small>Lifetime Access</small></p>
-                        <button><a href="buy.html">Buy</a></button>
-                        <p><small>Limited time offer</small></p>
+        <section class="single-payment-section">  
+            <div class="bg-dark bg-opacity-50">
+                <div class="sp-card-bg bg-primary bg-opacity-50 d-flex flex-column align-items-center justify-content-center p-4 p-lg-5 position-relative">
+                    <div class="offer-band-box position-absolute top-0 end-0"><div class="offer-band d-flex align-items-center justify-content-center text-light text-uppercase fs-4">Offer</div></div>
+                    <div class="bg-light d-flex w-100">
+                        <div class="sp-card w-100 d-flex flex-column">
+                            <div class="sp-card-head d-flex bg-dark text-light text-center text-uppercase align-items-center justify-content-center">
+                                <h1 class="m-1 display-4 fst-italic">Single payment</h1>
+                            </div>
+                            <div class="sp-card-body d-flex flex-column gap-2 py-3 align-items-center justify-content-center bg-secondary bg-opacity-50 text-dark text-center fs-1">
+                                <div class="price fw-bold display-2 opacity-75"><strike><small class="fs-1">$58</small></strike> $29<small class="fs-1">USD</small></div> 
+                                <p class="fw-bold opacity-75"><i aria-hidden="true" class="far fa-check-circle"></i> <small>Lifetime Access</small></p>
+                                <a href="buy.html" class="btn btn-outline-dark btn-sm rounded-pill fw-bold text-uppercase px-3">Buy</a>
+                                <p class="opacity-75 fs-5 text-uppercase"><small>Limited time offer</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </section> 
 
     </main>
         <!-- Footer -->
-    <footer class="flex-item-r">
-        <p>Copyright © 2022 Amaze Anywhere</p>
+    <footer class="d-flex text-uppercase align-items-center justify-content-center">
+        <p class="m-1 fs-7 text-secondary">Copyright © 2022 Amaze Anywhere</p>
     </footer>
 </body>
 <script>

@@ -30,7 +30,6 @@ h1, h2, h3 {
 }
 
 .hero-background {
-    grid-area: hero;
     background-image: url(../img/hero-banner.webp);
     background-size: 141vh;
     background-position: -69vh 0;
@@ -62,7 +61,6 @@ nav {
 }
 
 .offer-band-box {
-
     height: 6em;
     width: 7rem;
     overflow: hidden;
@@ -74,3 +72,80 @@ nav {
     background-image: linear-gradient(359deg, black 23%, #b3b3b354 55%, #ff040400), linear-gradient(180deg, black 100%, #6c5d5d9c 100%, #ff000000);
     transform: rotate(45deg) translate(16%, 20%);
 }
+
+.pages-background {
+    background-image: url(../img/fondo-prueba1.png);
+    background-size: 1041%;
+    background-position: 76% 100%;  
+}
+
+/* course goals section */
+
+.goals-card {
+    height: 40vh;
+}
+
+.goals-card-fx {
+    background: linear-gradient(90deg, #ffffff00 60%, #0000002b); 
+}
+
+.goals-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -1px;
+}
+
+.goals-img-fx {
+    background: linear-gradient(180deg, rgba(252, 252, 252, 0), #f6f8f9);
+    /* background-repeat: no-repeat; */
+}
+
+.goals-img-1 {
+    background-image: url(../img/Alan-400x220.webp);
+}
+
+.goals-img-2 {
+    background-image: url(../img/Guadi-400x220-2.png);
+}
+
+.goals-img-3 {
+    background-image: url(../img/foro-crop-3.png);
+}
+
+/* md */
+@media screen and (min-width:768px) {
+    html {
+        font-size: 1.15rem;
+    }
+
+    .pages-background {
+        background-size: cover;
+        background-position: right top;
+    }
+}
+
+/* lg */
+@media screen and (min-width:992px) {
+    html {
+        font-size: 0.9rem;
+    }
+    
+    .goals-card {
+        height: 79vh;
+    }
+    .goals-img-container {
+        height: 50%!important;
+    } 
+
+    .pages-background {
+        height: 55vh!important;
+        background-size: cover;
+        background-position: right top;
+    }
+    .header-titles {
+        font-size: 4rem!important;
+    }
+
+
+}
+
